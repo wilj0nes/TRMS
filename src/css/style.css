@@ -22,12 +22,12 @@
 }
 
 .demo-card-wide.mdl-card {
-    width: 812px;
+    /*width: 812px;*/
+    width: 70%;
 }
 .demo-card-wide > .mdl-card__title {
     color: #fff;
     height: 176px;
-    /*background: url('../assets/demos/welcome_card.jpg') center / cover;*/
 }
 .demo-card-wide > .mdl-card__menu {
     color: #fff;
@@ -48,6 +48,26 @@
     width: 200px;
 }
 .grade-format-input{
-    float: right;
+    /*float: right;*/
     width: 200px;
+}
+.file-input{
+    cursor: pointer;
+}
+
+.input-group .form-control {
+    float: none;
+}
+.input-group .input-buttons {
+    position: relative;
+    z-index: 3;
+}
+
+.form-row input {
+    padding: 3px 1px;
+    width: 100%;
+}
+input.currency {
+    text-align: right;
+    padding-right: 15px;
 }
