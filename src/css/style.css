@@ -1,5 +1,6 @@
 .background{
     background-color: #FAFAFA;
+    margin-bottom: 20px;
 }
 
 .brand{
@@ -17,7 +18,7 @@
 }
 .centered-container{
     width: 460px;
-    margin: 18px auto 16px;
+    margin: 1px auto 16px;
 }
 
 .demo-card-wide.mdl-card {
@@ -30,4 +31,23 @@
 }
 .demo-card-wide > .mdl-card__menu {
     color: #fff;
+}
+.mdl-textfield__input{
+    color: black;
+}
+.date-input {
+    float: left;
+    width: 200px
+}
+.time-input{
+    float: right;
+    width: 200px;
+}
+.cost-input{
+    float: left;
+    width: 200px;
+}
+.grade-format-input{
+    float: right;
+    width: 200px;
 }
