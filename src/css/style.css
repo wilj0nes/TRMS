@@ -23,7 +23,7 @@
 
 .demo-card-wide.mdl-card {
     /*width: 812px;*/
-    width: 70%;
+    width: 80%;
 }
 .demo-card-wide > .mdl-card__title {
     color: #fff;
@@ -70,4 +70,8 @@
 input.currency {
     text-align: right;
     padding-right: 15px;
+}
+
+.custom-file-input{
+    cursor: pointer;
 }

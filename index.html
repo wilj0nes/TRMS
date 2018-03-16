@@ -17,34 +17,34 @@
             <form>
                 <div class="form-row">
                     <div class="col-md-6 mb-4">
-                        <label for="validationDefault01">First name</label>
-                        <input type="text" class="form-control" id="validationDefault01" placeholder=" First name">
+                        <label for="firstname">First name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder=" First name" value="">
                     </div>
                     <div class="col-md-6 mb-4">
-                        <label for="validationDefault02">Last name</label>
-                        <input type="text" class="form-control" id="validationDefault02" placeholder=" Last name">
+                        <label for="firstname">Last name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder=" Last name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-4 form-group">
-                        <label for="validationDefault03">City</label>
-                        <input type="text" class="form-control" id="validationDefault03" placeholder=" City" required>
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder=" City">
                     </div>
                     <div class="col-md-3 mb-4 form-group">
-                        <label for="validationDefault04">State</label>
-                        <input type="text" class="form-control" id="validationDefault04" placeholder=" State" required>
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" placeholder=" State">
                     </div>
                     <div class="col-md-3 mb-4 form-group">
-                        <label for="validationDefault05">Zip</label>
-                        <input type="text" class="form-control" id="validationDefault05" placeholder=" Zip" required>
+                        <label for="zip">Zip</label>
+                        <input type="text" class="form-control" id="zip" placeholder=" Zip">
                     </div>
                     <div class="col-md-10 mb-4 form-group">
                         <label id="desc">Description</label>
-                        <textarea id="d" class="form-control" name="location"></textarea>
+                        <textarea id="description" class="form-control" name="location"></textarea>
                     </div>
-                    <div class="col-md-6 mb-4 form-group">
+                    <div title="The date and time of the event" class="col-md-6 mb-4 form-group">
                         <label id="username">Date and Time</label>
-                        <input class=" form-control" type="datetime-local" name="username"/>
+                        <input class=" form-control" type="datetime-local" id="date-time" name="username"/>
                     </div>
                     <div class="col-md-6 mb-4 form-group">
                         <label for="cost">Cost</label>
@@ -52,7 +52,11 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="$">$</span>
                             </div>
-                            <input type="number" class="form-control" id="cost" placeholder=" Cost" aria-describedby="inputGroupPrepend2" required>
+                            <input type="number"
+                                   class="form-control"
+                                   id="cost"
+                                   placeholder=" Cost"
+                                   aria-describedby="inputGroupPrepend2">
                         </div>
                     </div>
                     <div class="col-md-6 mb-4 form-group">
@@ -75,9 +79,20 @@
                             <option>Other</option>
                         </select>
                     </div>
+                    <div class="col-md-10 mb-4 form-group">
+                        <label for="files">Choose file</label>
+                        <div class="input-group mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="files" multiple>
+                                <label class="custom-file-label" for="files">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-primary" id="submit-button" type="submit">Submit form</button>
+                <button class="btn btn-primary" id="submit" type="button">Submit</button>
+                <!--<button class="btn btn-primary" id="submit" type="submit">Submit</button>-->
             </form>
+            <!--TODO make "other" modals-->
         </div>
     </body>
 </html>
